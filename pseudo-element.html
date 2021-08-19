@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before after</title>
+    <style>
+        h1::before{
+            content: ' hello ';
+            color: chartreuse;
+        }
+        h1::after{
+            content: ' gello';
+            color: green;
+        }
+        blockquote::before{
+            content: open-quote;
+            color: aqua;
+            font-size: 1.5rem;
+        }
+        blockquote::after{
+            content: close-quote;
+            color: aqua;
+            font-size: 1.5rem;
+        }
+        h2{
+            display: inline-block;
+        }
+        .section-title::after,.section-title:hover::before{
+            content: '';
+            height: 2px;
+            width:100%;
+            background-color: blueviolet;
+           display:block;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Having fun with web development</h1>
+    <h1>Having fun with developing</h1>
+    <section>
+        <h2 class="section-title">Best Quotes</h2>
+        <blockquote>
+            "Life is not a problem to be solved, but a reality to be experienced."
+        </blockquote>
+        <blockquote>
+
+        </blockquote> 
+    </section>
+</body>
+</html>
